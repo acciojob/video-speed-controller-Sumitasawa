@@ -5,13 +5,14 @@
   <title>Video Speed Controller</title>
 </head>
 <body>
+	
   <div class="player">
-    <video class="viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+    <video class="player__video viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
 
     <div class="player__controls">
       <button class="player__button toggle" title="Toggle Play">►</button>
-      <button class="skip" data-skip="-10">« 10s</button>
-      <button class="skip" data-skip="25">25s »</button>
+      <button class="skip rewind" data-skip="-10">« 10s</button>
+      <button class="skip forward" data-skip="25">25s »</button>
 
       <label>
         Volume
