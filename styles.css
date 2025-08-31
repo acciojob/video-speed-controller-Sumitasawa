@@ -1,2 +1,52 @@
-
-/* Your CSS Code here. */
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #222;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .player {
+      max-width: 750px;
+      width: 100%;
+    }
+    .viewer {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .player__controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+      border-radius: 0 0 8px 8px;
+    }
+    .progress {
+      flex: 1;
+      height: 8px;
+      background: #444;
+      margin: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      position: relative;
+    }
+    .progress__filled {
+      width: 0;
+      height: 100%;
+      background: #ff9800;
+      border-radius: 4px;
+      flex-basis: 0;
+    }
+    .player__button, .skip {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    input[type="range"] {
+      margin: 0 5px;
+    }
